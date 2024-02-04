@@ -1,0 +1,16 @@
+#Directories
+_distutils_hack/
+bs4/
+certifi/
+charset_normalizer/
+idna/
+lyricsgenius/
+oauthlib/
+pip/
+pkg_resources/
+requests/
+requests_oauthlib/
+setuptools/
+soupsieve/
+tweepy/
+urllib3/
