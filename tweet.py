@@ -45,3 +45,4 @@ def handler(event, context):
     tweet = write_tweet(lyrics, tweet)
     # Posts tweet
     status = api.create_tweet(text=tweet, place_id=song)
+    callback(null, <any>)
