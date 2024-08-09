@@ -6,8 +6,7 @@ import os
 
 # Global vars
 genius = lyricsgenius.Genius(os.environ['GENIUSAPIKEY'])
-all_songs = ["Age of Delilah", "A House In Nebraska", "A long, unfortunate while (demo)", "American Teenager", "Antlers", "Bruises", "Casings", "Crush", "Crying During Sex", "Dog Days", "Dust Bowl (Demo)", "Everytime - Spotify Singles", "Family Tree (Intro)", "Family Tree", "Gibson Girl", "God's Country", "Golden Age", "Growing Pains", "Half-Cocked", "Hard Times", "Head in the Wall", "Inbred", "Knuckle Velvet", "Lilies", "Michelle Pfeiffer", "Misuse Oh", "Ptolemaea", "Strangers", "Sun Bleached Flies", "Sunday Morning", "Thoroughfare", "Two-Headed Mother", "Unpunishable", "Western Nights", "Waco, Texas (Demo)"]
-
+all_songs = open('all_songs.txt', 'r').readlines()
 # Determine a random song, return full lyrics string and song name
 def find_lyrics():
     genius_client_access_token = (os.environ['GENIUSCAT'])
