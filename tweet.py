@@ -5,7 +5,7 @@ import tweepy
 import os
 
 # Global vars
-genius = lyricsgenius.Genius(os.environ['GENIUSAPIKEY'])
+genius = lyricsgenius.Genius(os.environ['GENIUSAPIKEY'], remove_section_headers=True, skip_non_songs=True)
 all_songs = open('all_songs.txt', 'r').readlines()
 # Determine a random song, return full lyrics string and song name
 def find_lyrics():
